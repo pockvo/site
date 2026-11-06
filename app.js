@@ -106,24 +106,8 @@
     }
   }
 
-  // ---------- light under the cursor ----------
+  // ---------- cards follow the cursor ----------
   if (finePointer && !reduce) {
-    const glow = document.createElement('div');
-    glow.className = 'cursor-glow';
-    document.body.appendChild(glow);
-    let raf = 0;
-    addEventListener(
-      'pointermove',
-      (e) => {
-        cancelAnimationFrame(raf);
-        raf = requestAnimationFrame(() => {
-          glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-          glow.style.opacity = '1';
-        });
-      },
-      { passive: true },
-    );
-    document.documentElement.addEventListener('pointerleave', () => (glow.style.opacity = '0'));
     for (const el of $$('.spot')) {
       el.addEventListener('pointermove', (e) => {
         const r = el.getBoundingClientRect();
