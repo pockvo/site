@@ -2,22 +2,314 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pockvo</title>
-<meta name="description" content="Pockvo — ваш собственный криптокошелёк. Ключи хранятся только на вашем устройстве." />
-<style>
-  :root { --bg: #07080f; --text: #f3f4fa; --muted: #9aa3c7; --accent: #7c5cff; --accent-2: #22d3ee; }
-  * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 24px 16px; }
-  main { text-align: center; max-width: 520px; }
-  h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  p { color: var(--muted); margin: 0; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Pockvo — криптокошелёк, где ключи только у вас</title>
+<meta name="description" content="Pockvo — бесплатный некастодиальный криптокошелёк для Windows и Android. 21 сеть, более 1500 монет и токенов, обмен любой монеты на любую, покупка за рубли. Ключи хранятся только на вашем устройстве." />
+<meta name="theme-color" content="#07080f" />
+<meta property="og:title" content="Pockvo — криптокошелёк, где ключи только у вас" />
+<meta property="og:description" content="21 сеть, 1500+ монет и токенов, обмен и покупка — без аккаунтов и посредников." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<main>
-  <h1>Pockvo</h1>
-  <p>Ваш собственный криптокошелёк. Сайт скоро откроется.</p>
+<div class="bg" aria-hidden="true">
+  <i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+  <div class="grid"></div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Pockvo — в начало">
+      <img src="assets/logo.svg" alt="" width="32" height="32" />
+      <span>Pockvo</span>
+    </a>
+    <nav class="links" id="links">
+      <a href="#features">Возможности</a>
+      <a href="#security">Безопасность</a>
+      <a href="#networks">Сети</a>
+      <a href="#download">Скачать</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn-sm btn-glow nav-cta" href="#download">Скачать</a>
+    <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="links"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- hero -->
+  <section class="hero wrap">
+    <div class="hero-text">
+      <span class="badge reveal"><i class="dot"></i> Бесплатно · без регистрации</span>
+      <h1 class="reveal" style="--d: 80ms">Криптокошелёк,<br />где ключи <span class="grad">только у вас</span></h1>
+      <p class="lead reveal" style="--d: 160ms">Храните, отправляйте, меняйте и покупайте криптовалюту в 21 сети. Никаких аккаунтов и посредников: секретная фраза никогда не покидает ваше устройство.</p>
+      <div class="cta reveal" style="--d: 240ms">
+        <a class="btn btn-lg btn-glow" id="heroDownload" href="#download">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" /></svg>
+          <span id="heroDownloadText">Скачать Pockvo</span>
+        </a>
+        <a class="btn btn-lg btn-ghost" href="#features">Что умеет</a>
+      </div>
+      <div class="platforms reveal" style="--d: 320ms">
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zm8.5 1.3L21 21v-8.5h-9.5zm0-15.6v7.3H21V3z" /></svg>Windows</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9h10v8a1.5 1.5 0 0 1-1.5 1.5H15V21a1 1 0 0 1-2 0v-2.5h-2V21a1 1 0 0 1-2 0v-2.5h-.5A1.5 1.5 0 0 1 7 17zm-2.5 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zm15 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zM8.3 4.3l-.9-1.5a.3.3 0 0 1 .5-.3l1 1.6A6 6 0 0 1 12 3.5c1.1 0 2.2.2 3.1.6l1-1.6a.3.3 0 0 1 .5.3l-.9 1.5A5.4 5.4 0 0 1 17 8H7a5.4 5.4 0 0 1 1.3-3.7zM10 6a.7.7 0 1 0 0-1.4.7.7 0 0 0 0 1.4zm4 0a.7.7 0 1 0 0-1.4.7.7 0 0 0 0 1.4z" /></svg>Android</span>
+        <span class="soon">Linux · скоро</span>
+        <span class="soon">iPhone · скоро</span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" style="--d: 200ms">
+      <div class="orbit" aria-hidden="true">
+        <img class="coin c1" src="assets/coins/bitcoin.webp" alt="" />
+        <img class="coin c2" src="assets/coins/ethereum.webp" alt="" />
+        <img class="coin c3" src="assets/coins/the-open-network.webp" alt="" />
+        <img class="coin c4" src="assets/coins/solana.webp" alt="" />
+        <img class="coin c5" src="assets/coins/tether.webp" alt="" />
+        <img class="coin c6" src="assets/coins/monero.webp" alt="" />
+      </div>
+      <div class="phone" id="phone" role="img" aria-label="Экран приложения Pockvo: общий баланс, график и список монет">
+        <div class="phone-glare"></div>
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="app-top">
+            <span class="app-wallet"><i></i>Основной кошелёк</span>
+            <span class="app-bell"></span>
+          </div>
+          <div class="app-hero">
+            <span class="app-label">Общий баланс</span>
+            <div class="app-total" id="appTotal">$12 480,52</div>
+            <span class="app-pill">▲ $312,40 · +2,6% за 24 ч</span>
+            <div class="app-actions">
+              <span><b>↗</b>Отправить</span><span><b>↙</b>Получить</span><span><b>⇄</b>Обмен</span><span><b>+</b>Купить</span>
+            </div>
+          </div>
+          <div class="app-chart">
+            <svg viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="cg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#7c5cff" stop-opacity=".45" /><stop offset="1" stop-color="#7c5cff" stop-opacity="0" /></linearGradient>
+                <linearGradient id="cl" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset="1" stop-color="#22d3ee" /></linearGradient>
+              </defs>
+              <path class="chart-area" d="M0 62 C20 58 30 66 50 55 S80 40 100 46 130 30 150 34 180 18 200 26 230 14 250 20 280 6 300 10 L300 80 L0 80Z" fill="url(#cg)" />
+              <path class="chart-line" pathLength="1" d="M0 62 C20 58 30 66 50 55 S80 40 100 46 130 30 150 34 180 18 200 26 230 14 250 20 280 6 300 10" fill="none" stroke="url(#cl)" stroke-width="2.6" stroke-linecap="round" />
+            </svg>
+          </div>
+          <ul class="app-list">
+            <li style="--i: 0"><img src="assets/coins/bitcoin.webp" alt="" /><span><b>Bitcoin</b><em>0,0842 BTC</em></span><strong>$6 498,10</strong></li>
+            <li style="--i: 1"><img src="assets/coins/ethereum.webp" alt="" /><span><b>Ethereum</b><em>1,215 ETH</em></span><strong>$2 699,37</strong></li>
+            <li style="--i: 2"><img src="assets/coins/tether.webp" alt="" /><span><b>Tether</b><em>2 140 USDT · TRON</em></span><strong>$2 140,00</strong></li>
+            <li style="--i: 3"><img src="assets/coins/the-open-network.webp" alt="" /><span><b>Toncoin</b><em>620 TON</em></span><strong>$725,40</strong></li>
+            <li style="--i: 4"><img src="assets/coins/solana.webp" alt="" /><span><b>Solana</b><em>4,4 SOL</em></span><strong>$417,65</strong></li>
+          </ul>
+          <div class="toast-in"><i>✓</i>Пополнение: +120 USDT</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- coin ticker -->
+  <section class="ticker" aria-label="Поддерживаемые монеты">
+    <div class="ticker-track" id="ticker"></div>
+  </section>
+
+  <!-- numbers -->
+  <section class="wrap stats">
+    <div class="stat reveal"><b data-count="21">21</b><span>сеть</span></div>
+    <div class="stat reveal" style="--d: 80ms"><b data-count="1500" data-plus>1500+</b><span>монет и токенов</span></div>
+    <div class="stat reveal" style="--d: 160ms"><b data-count="30" data-plus>30+</b><span>языков</span></div>
+    <div class="stat reveal" style="--d: 240ms"><b>0</b><span>посредников и аккаунтов</span></div>
+  </section>
+
+  <!-- features -->
+  <section class="wrap section" id="features">
+    <div class="head reveal">
+      <span class="eyebrow">Возможности</span>
+      <h2>Всё для криптовалюты — в одном кошельке</h2>
+      <p>Pockvo сам подключается к блокчейнам: без серверов-посредников, без регистрации и без лишних шагов.</p>
+    </div>
+    <div class="bento">
+      <article class="card big spot reveal">
+        <div class="card-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h12m0 0-3.5-3.5M19 7l-3.5 3.5M17 17H5m0 0 3.5 3.5M5 17l3.5-3.5" /></svg></div>
+        <h3>Обмен любой монеты на любую</h3>
+        <p>Bitcoin на TON, Monero на USDT, Cardano на Ethereum — Pockvo сам найдёт маршрут через проверенные сервисы обмена. Если прямого пути нет, обмен пройдёт в два шага, а монеты между шагами будут лежать на вашем адресе.</p>
+        <div class="swap-demo" aria-hidden="true">
+          <span class="sd-coin"><img src="assets/coins/the-open-network.webp" alt="" />TON</span>
+          <span class="sd-path"><i></i></span>
+          <span class="sd-coin"><img src="assets/coins/ethereum.webp" alt="" />ETH</span>
+          <span class="sd-path"><i></i></span>
+          <span class="sd-coin"><img src="assets/coins/cardano.webp" alt="" />ADA</span>
+        </div>
+      </article>
+      <article class="card spot reveal" style="--d: 80ms">
+        <div class="card-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 20V4h5.5a4.5 4.5 0 0 1 0 9H6m0 3.5h9" /></svg></div>
+        <h3>Покупка за рубли</h3>
+        <p>Через СБП: Pockvo сравнит курсы обменников с хорошей репутацией и покажет, сколько монет вы получите. Монеты придут прямо на ваш адрес.</p>
+      </article>
+      <article class="card spot reveal" style="--d: 120ms">
+        <div class="card-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M5 15l4-5 4 3 6-7" /></svg></div>
+        <h3>Живые графики</h3>
+        <p>Цена любой монеты за день, неделю, месяц и год. Без интернета покажется последний сохранённый график.</p>
+      </article>
+      <article class="card spot reveal" style="--d: 80ms">
+        <div class="card-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9a6 6 0 0 1 12 0c0 6 3 8 3 8H3s3-2 3-8m4.3 11a1.9 1.9 0 0 0 3.4 0" /></svg></div>
+        <h3>Уведомления о пополнении</h3>
+        <p>Узнавайте о поступлении монет сразу — на телефоне даже тогда, когда приложение закрыто.</p>
+      </article>
+      <article class="card spot reveal" style="--d: 120ms">
+        <div class="card-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3A4 4 0 0 0 13 5.3l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1" /></svg></div>
+        <h3>Платёжные ссылки и QR</h3>
+        <p>Попросите перевод ссылкой или QR-кодом: сеть, адрес и сумма заполнятся у отправителя сами.</p>
+      </article>
+      <article class="card spot reveal" style="--d: 160ms">
+        <div class="card-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12zm10 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg></div>
+        <h3>Monero и приватность</h3>
+        <p>Полноценный кошелёк Monero прямо в приложении. Баланс можно скрыть одним жестом — встряхните телефон.</p>
+      </article>
+      <article class="card wide spot reveal">
+        <div class="card-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M6 6l2 2m8 8 2 2M6 18l2-2m8-8 2-2" /></svg></div>
+        <h3>Оформление под себя</h3>
+        <p>Тёмная и светлая тема, аватары и имена кошельков, несколько кошельков в одном приложении и перенос оформления между устройствами по QR-коду.</p>
+        <div class="themes" aria-hidden="true"><i class="t1"></i><i class="t2"></i><i class="t3"></i><i class="t4"></i></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- security -->
+  <section class="wrap section security" id="security">
+    <div class="sec-visual reveal" aria-hidden="true">
+      <div class="shield">
+        <i class="ring r1"></i><i class="ring r2"></i><i class="ring r3"></i>
+        <svg viewBox="0 0 120 140">
+          <defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset="1" stop-color="#22d3ee" /></linearGradient></defs>
+          <path class="shield-fill" d="M60 6 12 24v38c0 33 20 58 48 70 28-12 48-37 48-70V24z" />
+          <path class="shield-path" pathLength="1" d="M60 6 12 24v38c0 33 20 58 48 70 28-12 48-37 48-70V24z" fill="none" stroke="url(#sg)" stroke-width="5" stroke-linejoin="round" />
+          <path class="shield-check" pathLength="1" d="m38 70 15 15 30-32" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="sec-text">
+      <div class="head left reveal">
+        <span class="eyebrow">Безопасность</span>
+        <h2>Ваши монеты принадлежат только вам</h2>
+        <p>Pockvo — некастодиальный кошелёк: ключи есть только у вас, поэтому никто, кроме вас, не может ни заморозить, ни потратить ваши средства.</p>
+      </div>
+      <ul class="checks">
+        <li class="reveal"><b>Ключи только на устройстве.</b> Секретная фраза шифруется AES-256-GCM, а ключ к ней получается из вашего PIN-кода или пароля через scrypt.</li>
+        <li class="reveal" style="--d: 60ms"><b>Защита системы.</b> Поверх шифрования — хранилище ключей Windows или Android и вход по отпечатку пальца.</li>
+        <li class="reveal" style="--d: 120ms"><b>Подписанные обновления.</b> Приложение установит только обновление с цифровой подписью Pockvo — подделку оно не примет.</li>
+        <li class="reveal" style="--d: 180ms"><b>Без аккаунтов.</b> Ни почты, ни телефона, ни паспорта. Балансы читаются напрямую из публичных узлов блокчейнов.</li>
+        <li class="reveal" style="--d: 240ms"><b>Проверка перед подписью.</b> Каждую транзакцию обмена Pockvo проверяет сам: куда идут монеты, сколько и в какой сети.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- networks -->
+  <section class="wrap section" id="networks">
+    <div class="head reveal">
+      <span class="eyebrow">Сети</span>
+      <h2>21 сеть и больше 1500 монет и токенов</h2>
+      <p>Bitcoin, Ethereum и его сети второго уровня, TRON, Solana, TON и другие — в одном списке и с одной секретной фразой.</p>
+    </div>
+    <div class="nets" id="nets"></div>
+  </section>
+
+  <!-- steps -->
+  <section class="wrap section">
+    <div class="head reveal">
+      <span class="eyebrow">Начать просто</span>
+      <h2>Три шага до первого перевода</h2>
+    </div>
+    <ol class="steps">
+      <li class="step spot reveal"><span class="num">1</span><h3>Скачайте</h3><p>Установите Pockvo на компьютер с Windows или на телефон с Android.</p></li>
+      <li class="step spot reveal" style="--d: 100ms"><span class="num">2</span><h3>Создайте кошелёк</h3><p>Запишите секретную фразу на бумагу — или восстановите кошелёк по своей фразе.</p></li>
+      <li class="step spot reveal" style="--d: 200ms"><span class="num">3</span><h3>Пользуйтесь</h3><p>Получайте, отправляйте, меняйте и покупайте монеты. Без регистрации.</p></li>
+    </ol>
+  </section>
+
+  <!-- download -->
+  <section class="wrap section" id="download">
+    <div class="head reveal">
+      <span class="eyebrow">Скачать</span>
+      <h2>Pockvo для вашего устройства</h2>
+      <p id="versionLine">Бесплатно. Обновления приходят прямо в приложение.</p>
+    </div>
+    <div class="dl">
+      <article class="dl-card reveal" data-os="windows">
+        <span class="dl-yours">Для вашего устройства</span>
+        <div class="dl-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zm8.5 1.3L21 21v-8.5h-9.5zm0-15.6v7.3H21V3z" /></svg></div>
+        <h3>Windows</h3>
+        <p class="dl-meta" data-meta="windows">Windows 10 и 11, 64 бит</p>
+        <a class="btn btn-block btn-glow dl-btn is-off" data-dl="windows" href="#download" aria-disabled="true">Скоро</a>
+        <p class="dl-hint">Запустите установщик — Pockvo появится на рабочем столе.</p>
+      </article>
+      <article class="dl-card reveal" style="--d: 80ms" data-os="android">
+        <span class="dl-yours">Для вашего устройства</span>
+        <div class="dl-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9h10v8a1.5 1.5 0 0 1-1.5 1.5H15V21a1 1 0 0 1-2 0v-2.5h-2V21a1 1 0 0 1-2 0v-2.5h-.5A1.5 1.5 0 0 1 7 17zm-2.5 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zm15 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zM8.3 4.3l-.9-1.5a.3.3 0 0 1 .5-.3l1 1.6A6 6 0 0 1 12 3.5c1.1 0 2.2.2 3.1.6l1-1.6a.3.3 0 0 1 .5.3l-.9 1.5A5.4 5.4 0 0 1 17 8H7a5.4 5.4 0 0 1 1.3-3.7zM10 6a.7.7 0 1 0 0-1.4.7.7 0 0 0 0 1.4zm4 0a.7.7 0 1 0 0-1.4.7.7 0 0 0 0 1.4z" /></svg></div>
+        <h3>Android</h3>
+        <p class="dl-meta" data-meta="android">Android 6.0 и новее</p>
+        <a class="btn btn-block btn-glow dl-btn is-off" data-dl="android" href="#download" aria-disabled="true">Скоро</a>
+        <p class="dl-hint">Откройте файл на телефоне и разрешите установку из этого источника.</p>
+      </article>
+      <article class="dl-card soon reveal" style="--d: 160ms" data-os="linux">
+        <span class="dl-yours">Для вашего устройства</span>
+        <div class="dl-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-2.2 0-3.4 1.8-3.4 4.3 0 1.4.3 2.3-.6 3.6-1.2 1.6-2.5 3.6-2.5 5.8 0 .7.1 1.3.4 1.9-.8.4-1.7.8-1.6 1.6.2.9 2.3 1 3.5 1.4 1 .3 1.8.8 2.6.8.7 0 1.2-.4 1.6-.8h1c.4.4.9.8 1.6.8.8 0 1.6-.5 2.6-.8 1.2-.4 3.3-.5 3.5-1.4.1-.8-.8-1.2-1.6-1.6.3-.6.4-1.2.4-1.9 0-2.2-1.3-4.2-2.5-5.8-.9-1.3-.6-2.2-.6-3.6 0-2.5-1.2-4.3-3.4-4.3zm-1.5 3.6a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6zm3 0a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6zM12 8.6c.7 0 1.6.4 1.6.8s-.9 1-1.6 1-1.6-.6-1.6-1 .9-.8 1.6-.8z" /></svg></div>
+        <h3>Linux</h3>
+        <p class="dl-meta">AppImage и .deb</p>
+        <span class="btn btn-block btn-disabled">Скоро</span>
+        <p class="dl-hint">Версия для Linux готовится к выходу.</p>
+      </article>
+      <article class="dl-card soon reveal" style="--d: 240ms" data-os="ios">
+        <span class="dl-yours">Для вашего устройства</span>
+        <div class="dl-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6a4.3 4.3 0 0 0-3.4-1.8c-1.4-.2-2.8.8-3.5.8s-1.9-.8-3.1-.8a4.6 4.6 0 0 0-3.9 2.4c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 3 2.4 1.2-.1 1.6-.8 3.1-.8s1.8.8 3.1.8 2.1-1.2 2.9-2.3a10 10 0 0 0 1.3-2.7 4.2 4.2 0 0 1-2.7-3.9zM14.1 5.5A4.2 4.2 0 0 0 15.1 2a4.3 4.3 0 0 0-2.8 1.5 4 4 0 0 0-1 3.4 3.6 3.6 0 0 0 2.8-1.4z" /></svg></div>
+        <h3>iPhone</h3>
+        <p class="dl-meta">iOS 14 и новее</p>
+        <span class="btn btn-block btn-disabled">Скоро</span>
+        <p class="dl-hint">Версия для iPhone готовится к выходу.</p>
+      </article>
+    </div>
+    <details class="verify reveal">
+      <summary>Как проверить, что файл настоящий</summary>
+      <div class="verify-body">
+        <p>Скачивайте Pockvo только с этого сайта. У каждого файла есть контрольная сумма SHA-256 — она должна совпасть с суммой скачанного файла. В Windows её показывает команда <code>certutil -hashfile файл SHA256</code>.</p>
+        <div class="sums" id="sums"><p class="muted">Контрольные суммы появятся вместе с файлами.</p></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- faq -->
+  <section class="wrap section narrow" id="faq">
+    <div class="head reveal">
+      <span class="eyebrow">Вопросы</span>
+      <h2>Частые вопросы</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Pockvo бесплатный?</summary><div class="faq-a"><p>Да. Скачивание и использование бесплатны. При переводах вы платите только комиссию сети, при обмене — комиссию сервиса обмена; она видна до подтверждения.</p></div></details>
+      <details class="reveal"><summary>Где хранятся мои монеты?</summary><div class="faq-a"><p>Монеты всегда находятся в блокчейне, а Pockvo хранит только ключи к ним — зашифрованными на вашем устройстве. Без вас никто не может распоряжаться вашими средствами.</p></div></details>
+      <details class="reveal"><summary>Что будет, если я потеряю телефон или компьютер?</summary><div class="faq-a"><p>Установите Pockvo на новое устройство и восстановите кошелёк по секретной фразе из 12 слов. Поэтому фразу важно записать на бумагу и хранить в надёжном месте.</p></div></details>
+      <details class="reveal"><summary>Нужна ли регистрация?</summary><div class="faq-a"><p>Для самого кошелька — нет: ни почты, ни телефона, ни документов. У сторонних сервисов покупки и обмена могут быть свои правила — Pockvo показывает их до перехода.</p></div></details>
+      <details class="reveal"><summary>Можно ли пользоваться несколькими кошельками?</summary><div class="faq-a"><p>Да. В Pockvo можно создать или добавить несколько кошельков и быстро переключаться между ними.</p></div></details>
+      <details class="reveal"><summary>Как обновлять приложение?</summary><div class="faq-a"><p>Pockvo сам проверяет обновления и устанавливает их в одно нажатие. Каждое обновление подписано — приложение не примет поддельный файл.</p></div></details>
+    </div>
+  </section>
+
+  <!-- final call -->
+  <section class="wrap section">
+    <div class="final reveal">
+      <h2>Начните пользоваться Pockvo сегодня</h2>
+      <p>Пара минут — и у вас собственный криптокошелёк для 21 сети.</p>
+      <a class="btn btn-lg btn-light" href="#download">Скачать бесплатно</a>
+    </div>
+  </section>
 </main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top"><img src="assets/logo.svg" alt="" width="26" height="26" /><span>Pockvo</span></a>
+    <p>Некастодиальный криптокошелёк. Курсы криптовалют сильно меняются — храните секретную фразу в безопасности и никому её не сообщайте.</p>
+    <span class="copy">© <span id="year">2026</span> Pockvo</span>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
 </body>
 </html>
