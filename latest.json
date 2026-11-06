@@ -1,0 +1,22 @@
+{
+  "version": "1.25.0",
+  "date": "2026-11-06T19:11:00.602Z",
+  "notes": [
+    "Обновления теперь приходят с сайта pokvo.space",
+    "Платёжные ссылки открываются на сайте Pockvo",
+    "Установщик для Windows стал меньше",
+    "Проверка обновлений стала строже: приложение ставит только подписанные версии и не откатывается на старые"
+  ],
+  "windows": {
+    "url": "https://pokvo.space/downloads/Pockvo-1.25.0-setup.exe",
+    "sha256": "6610550c0b31e5a8ae8d535d70709b2f3344187e10d9f034ae6a678a68e4b79f",
+    "size": 103455227
+  },
+  "android": {
+    "url": "https://pokvo.space/downloads/Pockvo-1.25.0.apk",
+    "sha256": "e42cfb651f31798ce1e008535f91252cc9ef40056a909cac4af2c6d8c74a0186",
+    "size": 11777912
+  },
+  "sig": "55db0e46db7a361c52ed2019047c510c8cc49d100bd8ac33754ebbccd764d974e93437dc05a0c065a2825f6c09f1e32435ff35f7bd3e1dd58f46b84141afac04",
+  "sig2": "f881e8b684529f00fc003322aa82a12b270c78cb226c0fe4e13d7349770d74cc2b5042bf4a775809bebbf8ff0f08bc8a3c823cdd98b78c1c9c4594a4cc740303"
+}

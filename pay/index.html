@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Pockvo — запрос на перевод</title>
+<style>
+  :root { --bg:#07080f; --card:#11142a; --line:rgba(255,255,255,.09); --text:#f3f4fa; --muted:#8a8fa8; --grad:linear-gradient(135deg,#8b5cf6 0%,#4f7bff 52%,#22d3ee 100%); --warn:#fbbf24; color-scheme: dark; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f3f4fa; --card:#ffffff; --line:rgba(23,27,60,.09); --text:#0e1130; --muted:#6c7190; --warn:#a16207; color-scheme: light; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); display: grid; place-items: center; padding: 24px 16px; }
+  body::before { content: ''; position: fixed; inset: 0; z-index: -1; background: radial-gradient(60vmax 40vmax at 10% 0%, rgba(124,92,255,.28), transparent 60%), radial-gradient(50vmax 40vmax at 100% 20%, rgba(34,211,238,.18), transparent 60%); }
+  .card { width: 100%; max-width: 420px; background: var(--card); border: 1px solid var(--line); border-radius: 28px; padding: 28px 22px 22px; box-shadow: 0 30px 80px -30px rgba(40,30,120,.6); animation: in .7s cubic-bezier(.22,1.18,.36,1) both; }
+  @keyframes in { from { opacity: 0; transform: translateY(24px) scale(.95); } }
+  .logo { width: 52px; height: 52px; border-radius: 16px; background: var(--grad); display: grid; place-items: center; margin: 0 auto 14px; box-shadow: 0 14px 30px -12px rgba(108,99,255,.9); color: #fff; font-weight: 900; font-size: 26px; }
+  .who { text-align: center; color: var(--muted); font-weight: 600; font-size: 15px; }
+  .amount { text-align: center; font-size: 38px; font-weight: 850; letter-spacing: -.02em; margin: 6px 0 2px; word-break: break-word; }
+  .net { text-align: center; font-weight: 700; font-size: 14px; }
+  .net span { display: inline-block; padding: 4px 10px; border-radius: 99px; background: rgba(124,92,255,.15); color: #a78bfa; }
+  .memo { text-align: center; color: var(--muted); font-style: italic; margin-top: 10px; word-break: break-word; }
+  .label { margin: 22px 0 8px; font-size: 13px; color: var(--muted); font-weight: 650; }
+  .addr { font-family: ui-monospace, Consolas, monospace; font-size: 14px; line-height: 1.55; padding: 14px; border-radius: 16px; border: 1px solid var(--line); word-break: break-all; background: rgba(127,127,160,.08); }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 52px; border-radius: 16px; border: 0; font: inherit; font-weight: 800; font-size: 15px; cursor: pointer; text-decoration: none; margin-top: 10px; transition: transform .3s cubic-bezier(.34,1.56,.64,1); }
+  .btn:active { transform: scale(.96); }
+  .primary { background: var(--grad); color: #fff; box-shadow: 0 12px 30px -12px rgba(92,100,255,.9); }
+  .secondary { background: rgba(127,127,160,.12); color: var(--text); border: 1px solid var(--line); }
+  .warn { margin-top: 16px; font-size: 13px; line-height: 1.5; color: var(--warn); background: rgba(251,191,36,.08); border: 1px solid rgba(251,191,36,.25); padding: 12px 14px; border-radius: 14px; }
+  .foot { margin-top: 14px; text-align: center; font-size: 12.5px; color: var(--muted); }
+  .foot a { color: var(--muted); }
+  .bad { text-align: center; padding: 20px 0; }
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 30px); opacity: 0; background: var(--card); border: 1px solid var(--line); padding: 10px 16px; border-radius: 12px; font-weight: 700; transition: .35s; }
+  .toast.on { transform: translate(-50%, 0); opacity: 1; }
+</style>
+</head>
+<body>
+<main class="card" id="card"></main>
+<div class="toast" id="toast"></div>
+<script>
+(function () {
+  var ru = /^(ru|uk|be|kk)/i.test(navigator.language || '');
+  var L = ru ? {
+    asks: ' просит перевести', req: 'Запрос на перевод', any: 'Любая сумма', net: 'Сеть', addr: 'Адрес получателя',
+    open: 'Открыть в Pockvo', copy: 'Скопировать адрес', copied: 'Адрес скопирован', get: 'Скачать Pockvo',
+    warn: 'Отправляйте только {s} в сети {n}. Монеты из другой сети пропадут. Сверьте адрес с получателем.',
+    bad: 'Ссылка повреждена или неполная.', note: 'Данные ссылки не отправляются на сервер.'
+  } : {
+    asks: ' asks you to send', req: 'Payment request', any: 'Any amount', net: 'Network', addr: 'Recipient address',
+    open: 'Open in Pockvo', copy: 'Copy address', copied: 'Address copied', get: 'Get Pockvo',
+    warn: 'Send only {s} on the {n} network. Coins from another network will be lost. Check the address with the recipient.',
+    bad: 'The link is broken or incomplete.', note: 'The link details are never sent to a server.'
+  };
+  var NETS = { btc: 'Bitcoin', ltc: 'Litecoin', eth: 'Ethereum', bsc: 'BNB Smart Chain', polygon: 'Polygon', arbitrum: 'Arbitrum One', optimism: 'Optimism', base: 'Base', avax: 'Avalanche C-Chain', sol: 'Solana', tron: 'TRON' };
+  var q = new URLSearchParams(location.hash.slice(1));
+  var c = q.get('c'), to = q.get('to') || '', amt = q.get('amt') || '', s = (q.get('s') || '').slice(0, 16), n = (q.get('n') || '').slice(0, 40), m = (q.get('m') || '').slice(0, 80);
+  var card = document.getElementById('card');
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; card.appendChild(e); return e; }
+  el('div', 'logo', 'P');
+  if (!c || !Object.prototype.hasOwnProperty.call(NETS, c) || !to || to.length > 120 || (amt && !/^\d{1,18}(\.\d{1,18})?$/.test(amt))) { el('div', 'bad', L.bad); return; }
+  el('div', 'who', n ? n + L.asks : L.req);
+  el('div', 'amount', amt ? amt + ' ' + s : L.any + (s ? ' · ' + s : ''));
+  var net = el('div', 'net'); var sp = document.createElement('span'); sp.textContent = NETS[c]; net.appendChild(sp);
+  if (m) el('div', 'memo', '«' + m + '»');
+  el('div', 'label', L.addr);
+  el('div', 'addr', to);
+  var app = el('a', 'btn primary', L.open); app.href = 'pockvo://pay?' + location.hash.slice(1);
+  var cp = el('button', 'btn secondary', L.copy);
+  cp.onclick = function () {
+    (navigator.clipboard ? navigator.clipboard.writeText(to) : Promise.reject()).then(function () {
+      var tt = document.getElementById('toast'); tt.textContent = L.copied; tt.className = 'toast on'; setTimeout(function () { tt.className = 'toast'; }, 1800);
+    }).catch(function () { prompt(L.addr, to); });
+  };
+  el('div', 'warn', L.warn.replace('{s}', s || '—').replace('{n}', NETS[c]));
+  var foot = el('div', 'foot'); var a = document.createElement('a'); a.href = 'https://pokvo.space/#download'; a.textContent = L.get; foot.appendChild(a);
+  foot.appendChild(document.createTextNode(' · ' + L.note));
+})();
+</script>
+</body>
+</html>
