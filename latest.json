@@ -1,24 +1,26 @@
 {
-  "version": "1.26.4",
-  "date": "2026-11-07T20:14:21.164Z",
+  "version": "1.26.5",
+  "date": "2026-11-07T21:09:57.047Z",
   "notes": [
-    "Исправлен перевод Litecoin: слишком маленькую сумму приложение теперь не пропускает и сразу пишет минимум, а не непонятную ошибку сети"
+    "Графики цены и портфеля теперь можно смотреть за всё время, а не только за год",
+    "Обновление данных стало быстрее",
+    "Кнопка обновления приложения и индикатор обновления стали аккуратнее"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.4-setup.exe",
-    "sha256": "13f9d01c546170c2956c596bf9c164703ba5ea39e8d43eb5eb7e2369bc22fe7f",
-    "size": 102913753
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.5-setup.exe",
+    "sha256": "3314642667ca47e43756d7809facdec30d6aa25166c1bc0cf6b9d28a7ad334c7",
+    "size": 102914189
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.4.apk",
-    "sha256": "84f7f051d0a460d8352dee3810b387be8ccd9111f8af5031965d9b683f3df544",
-    "size": 11224267
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.5.apk",
+    "sha256": "1c89d549eb9732781f91be75fadb45b01e152b102cb1163e6a874d3034f3f4bd",
+    "size": 11224824
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.4-x86_64.AppImage",
-    "sha256": "c080333df6c808379c2260f996f8417bd464bfd2edef31ac37dc749653bb832a",
-    "size": 104230039
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.5-x86_64.AppImage",
+    "sha256": "8720ab192a1db565f14b13f9ff4692c1cce47904444826e98cebe63775d4573d",
+    "size": 104230377
   },
-  "sig": "1a8f9ac40d6a5feef7ee25c7e43874f50861fc17ebdbb88c6b12321fdec7a5b2e68b78d813c6e5ac9a78491ba12b95dec202b8484d6c84378f7a0f358ed96a0f",
-  "sig2": "28047aea733fe3b09fec9808d4f074046ae91488124d99a4f69c5dfd5a1744d88c1244448386d9bea7f15a185d16ef40f4000489520757c3579deb54139ec101"
+  "sig": "531948c8bc35149ab70c496ceab88f2422084295cf0a17d8d78280c5199b79da9f9d9a6cb3ec9a767cd95f914f71378266234c3be520a20826570852ee40d00d",
+  "sig2": "bdc197161f8b058317ad0036b9a2237f5d06f2ced00eca8fb47242e0d392140f122e984666af2d587e4f31bce794e27399c99d332fe736ef5f81020160f68c07"
 }
