@@ -1,25 +1,26 @@
 {
-  "version": "1.26.1",
-  "date": "2026-11-07T15:38:48.537Z",
+  "version": "1.26.2",
+  "date": "2026-11-07T16:43:09.907Z",
   "notes": [
-    "Верхняя панель на телефоне больше не закрывает экран полупрозрачной полосой",
-    "Кнопки в тёмной теме теперь в цветах нового дизайна"
+    "Переводы между своими кошельками: другой ваш кошелёк больше не считается «вашим адресом»",
+    "Мои кошельки: кнопки больше не наезжают на дату",
+    "Покупка за рубли и неактивные кнопки в цветах нового дизайна"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.1-setup.exe",
-    "sha256": "cd6fd23feb459d81a193daf6eb004c6febaa7b157df7f730ffb3be4eb89a7c6f",
-    "size": 102913392
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.2-setup.exe",
+    "sha256": "c297dbbe308a6604d5941f564fa4da06040ba05e16751569ce160ee49af1e31d",
+    "size": 102912838
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.1.apk",
-    "sha256": "5accbda223970cc2114cafee95c0c6925ceae9b032fcf8e26d0856a9b0a3babe",
-    "size": 11223684
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.2.apk",
+    "sha256": "48afc856012a2b30ea87bc34f1546cd1353c0aa21c9bbb843cc613be769398ee",
+    "size": 11224888
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.1-x86_64.AppImage",
-    "sha256": "2c6dbfbfa668c03341afe026cad92532b4ecee185e30be78d0ea5be0cc59f66a",
-    "size": 104230278
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.2-x86_64.AppImage",
+    "sha256": "41fa144acbb6e5c9c5fbbfed56985f79de4537fcac401641fc84bf56c5d8d2e2",
+    "size": 104230329
   },
-  "sig": "f7f205e84a4c6db4b8c2e6c7cf4313c550d73dbe1e26265d963b7c631f2181d4e2f1ffae97baf6c67afdc49fb485d47c8dda7a3c7781cacc6260fdfc7ca93d03",
-  "sig2": "45f0c9dd335a5459f8468b5638368ef252803e9f33cf1b3a268ba6ccdae351561a85fe3f2719f41097b2ac063e2cd41fd0307df2730147d924ce713a553e1104"
+  "sig": "dbff2ddc39a5ca523928178cb0091ba1222d7a36f1c7ae08322f401878372b048e6992e90e50295bb45a842f64569caf4db990ebcf3baa22a74f630907368c0e",
+  "sig2": "bfc36f2c7cad900523ce41c3eeb35bee8d28c4e975779db94dd2ba63885cf347dcce85d284419b8b8c624c838a05a134989eb727415043530f2dac4dcecac601"
 }
