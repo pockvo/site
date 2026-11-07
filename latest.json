@@ -1,26 +1,25 @@
 {
-  "version": "1.26.0",
-  "date": "2026-11-07T13:43:04.635Z",
+  "version": "1.26.1",
+  "date": "2026-11-07T15:38:48.537Z",
   "notes": [
-    "Новый дизайн: бумага, чёрный и оранжевый, как на сайте Pockvo",
-    "Новые шрифты и новая иконка приложения",
-    "Светлая и тёмная темы стали спокойнее и читаются лучше"
+    "Верхняя панель на телефоне больше не закрывает экран полупрозрачной полосой",
+    "Кнопки в тёмной теме теперь в цветах нового дизайна"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.0-setup.exe",
-    "sha256": "2759525c8fb7421136e1f000671bae64754f528506298ce9f84d5deca118647c",
-    "size": 102912670
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.1-setup.exe",
+    "sha256": "cd6fd23feb459d81a193daf6eb004c6febaa7b157df7f730ffb3be4eb89a7c6f",
+    "size": 102913392
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.0.apk",
-    "sha256": "ff70fbdeaec353b2b1585f381a06f5eb3078c607e0a436d7803407f0d6f9355c",
-    "size": 11223715
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.1.apk",
+    "sha256": "5accbda223970cc2114cafee95c0c6925ceae9b032fcf8e26d0856a9b0a3babe",
+    "size": 11223684
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.0-x86_64.AppImage",
-    "sha256": "757c4f2437f515b033afcf8b9321c74297f74536ec877bda79e92e43986007b1",
-    "size": 104226370
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.1-x86_64.AppImage",
+    "sha256": "2c6dbfbfa668c03341afe026cad92532b4ecee185e30be78d0ea5be0cc59f66a",
+    "size": 104230278
   },
-  "sig": "fd7ec73b6acf1b2883d5616c167cf4e5139a12887be7d4b15596f6e74d095ce519ac64596b563b6590a25f188495f35942e56986a020739e1eee3b9b731e7507",
-  "sig2": "7424987944b191402e82b57a95900aba78d12d14b9cfb750803d86e3e0812986db1979ae8b38260379b1795ec705c0e64d1964b2ce37eab001ce14e503c1c302"
+  "sig": "f7f205e84a4c6db4b8c2e6c7cf4313c550d73dbe1e26265d963b7c631f2181d4e2f1ffae97baf6c67afdc49fb485d47c8dda7a3c7781cacc6260fdfc7ca93d03",
+  "sig2": "45f0c9dd335a5459f8468b5638368ef252803e9f33cf1b3a268ba6ccdae351561a85fe3f2719f41097b2ac063e2cd41fd0307df2730147d924ce713a553e1104"
 }
