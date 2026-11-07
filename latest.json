@@ -1,26 +1,25 @@
 {
-  "version": "1.26.2",
-  "date": "2026-11-07T16:43:09.907Z",
+  "version": "1.26.3",
+  "date": "2026-11-07T17:41:10.484Z",
   "notes": [
-    "Переводы между своими кошельками: другой ваш кошелёк больше не считается «вашим адресом»",
-    "Мои кошельки: кнопки больше не наезжают на дату",
-    "Покупка за рубли и неактивные кнопки в цветах нового дизайна"
+    "Защита от съёмки экрана: PIN-код, секретную фразу и отправку больше нельзя снять на видео, скриншот или зеркалирование",
+    "Главный экран с балансом снимать по-прежнему можно"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.2-setup.exe",
-    "sha256": "c297dbbe308a6604d5941f564fa4da06040ba05e16751569ce160ee49af1e31d",
-    "size": 102912838
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.3-setup.exe",
+    "sha256": "ee09a5ac93632d5ce342b48dc238114a0776ba34f381d2a7b99650e485cc2c20",
+    "size": 102912918
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.2.apk",
-    "sha256": "48afc856012a2b30ea87bc34f1546cd1353c0aa21c9bbb843cc613be769398ee",
-    "size": 11224888
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.3.apk",
+    "sha256": "f42558325ee178ef42a88e1659ca016fd44365efcdafd543a27188e82a27f059",
+    "size": 11224954
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.2-x86_64.AppImage",
-    "sha256": "41fa144acbb6e5c9c5fbbfed56985f79de4537fcac401641fc84bf56c5d8d2e2",
-    "size": 104230329
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.3-x86_64.AppImage",
+    "sha256": "8e58587d1acc6e9840f8ed6aa900a58a0d85928c4f0b5c9b1ba4e0aba0adaf43",
+    "size": 104230565
   },
-  "sig": "dbff2ddc39a5ca523928178cb0091ba1222d7a36f1c7ae08322f401878372b048e6992e90e50295bb45a842f64569caf4db990ebcf3baa22a74f630907368c0e",
-  "sig2": "bfc36f2c7cad900523ce41c3eeb35bee8d28c4e975779db94dd2ba63885cf347dcce85d284419b8b8c624c838a05a134989eb727415043530f2dac4dcecac601"
+  "sig": "b99383e3be65950983ba5a52aab65e110f6e9fc5676d7256adb95abb5a19b4935bbcc963498472eba7815d79355a3d64072be52f594bc89663f5230c65742107",
+  "sig2": "bbd090c8ceeec3dad6cae0d8a4274120ffd27742d0c89f1ffe6b1635fa95943b948432a6fe81fcc310695f5b774f615d30cd4b2a3976306fcd8835ecc68b3e0f"
 }
