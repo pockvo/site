@@ -7,30 +7,34 @@
 <meta name="robots" content="noindex">
 <title>Pockvo — запрос на перевод</title>
 <style>
-  :root { --bg:#07080f; --card:#11142a; --line:rgba(255,255,255,.09); --text:#f3f4fa; --muted:#8a8fa8; --grad:linear-gradient(135deg,#8b5cf6 0%,#4f7bff 52%,#22d3ee 100%); --warn:#fbbf24; color-scheme: dark; }
-  @media (prefers-color-scheme: light) { :root { --bg:#f3f4fa; --card:#ffffff; --line:rgba(23,27,60,.09); --text:#0e1130; --muted:#6c7190; --warn:#a16207; color-scheme: light; } }
+  :root { --bg:#121211; --card:#1c1b19; --line:rgba(243,239,230,.1); --text:#f3efe6; --muted:#a39d90; --accent:#ff4d1a; --ink:#141414; --warn:#f2c14e; color-scheme: dark; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f3efe6; --card:#fbf9f4; --line:rgba(20,20,20,.12); --text:#141414; --muted:#69645a; --warn:#8a5d00; color-scheme: light; } }
   * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); display: grid; place-items: center; padding: 24px 16px; }
-  body::before { content: ''; position: fixed; inset: 0; z-index: -1; background: radial-gradient(60vmax 40vmax at 10% 0%, rgba(124,92,255,.28), transparent 60%), radial-gradient(50vmax 40vmax at 100% 20%, rgba(34,211,238,.18), transparent 60%); }
-  .card { width: 100%; max-width: 420px; background: var(--card); border: 1px solid var(--line); border-radius: 28px; padding: 28px 22px 22px; box-shadow: 0 30px 80px -30px rgba(40,30,120,.6); animation: in .7s cubic-bezier(.22,1.18,.36,1) both; }
-  @keyframes in { from { opacity: 0; transform: translateY(24px) scale(.95); } }
-  .logo { width: 52px; height: 52px; border-radius: 16px; background: var(--grad); display: grid; place-items: center; margin: 0 auto 14px; box-shadow: 0 14px 30px -12px rgba(108,99,255,.9); color: #fff; font-weight: 900; font-size: 26px; }
+  body { margin: 0; min-height: 100vh; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); display: grid; place-items: center; padding: 24px 16px; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; z-index: -1; top: -18vmin; right: -18vmin; width: 52vmin; height: 52vmin; border-radius: 50%; background: var(--accent); }
+  .card { width: 100%; max-width: 420px; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 28px 22px 22px; animation: in .6s cubic-bezier(.22,1,.36,1) both; }
+  @keyframes in { from { opacity: 0; transform: translateY(16px); } }
+  @media (prefers-reduced-motion: reduce) { .card { animation: none; } }
+  .logo { width: 52px; height: 52px; border-radius: 12px; margin: 0 auto 14px; background: url('../assets/mark.svg') center / cover no-repeat; color: transparent; font-size: 0; }
   .who { text-align: center; color: var(--muted); font-weight: 600; font-size: 15px; }
-  .amount { text-align: center; font-size: 38px; font-weight: 850; letter-spacing: -.02em; margin: 6px 0 2px; word-break: break-word; }
+  .amount { text-align: center; font-size: 36px; font-weight: 800; letter-spacing: -.03em; margin: 6px 0 2px; word-break: break-word; font-variant-numeric: tabular-nums; }
   .net { text-align: center; font-weight: 700; font-size: 14px; }
-  .net span { display: inline-block; padding: 4px 10px; border-radius: 99px; background: rgba(124,92,255,.15); color: #a78bfa; }
+  .net span { display: inline-block; padding: 4px 10px; border-radius: 7px; background: rgba(255,77,26,.14); color: var(--accent); }
   .memo { text-align: center; color: var(--muted); font-style: italic; margin-top: 10px; word-break: break-word; }
   .label { margin: 22px 0 8px; font-size: 13px; color: var(--muted); font-weight: 650; }
-  .addr { font-family: ui-monospace, Consolas, monospace; font-size: 14px; line-height: 1.55; padding: 14px; border-radius: 16px; border: 1px solid var(--line); word-break: break-all; background: rgba(127,127,160,.08); }
-  .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 52px; border-radius: 16px; border: 0; font: inherit; font-weight: 800; font-size: 15px; cursor: pointer; text-decoration: none; margin-top: 10px; transition: transform .3s cubic-bezier(.34,1.56,.64,1); }
-  .btn:active { transform: scale(.96); }
-  .primary { background: var(--grad); color: #fff; box-shadow: 0 12px 30px -12px rgba(92,100,255,.9); }
-  .secondary { background: rgba(127,127,160,.12); color: var(--text); border: 1px solid var(--line); }
-  .warn { margin-top: 16px; font-size: 13px; line-height: 1.5; color: var(--warn); background: rgba(251,191,36,.08); border: 1px solid rgba(251,191,36,.25); padding: 12px 14px; border-radius: 14px; }
+  .addr { font-family: ui-monospace, Consolas, monospace; font-size: 14px; line-height: 1.55; padding: 14px; border-radius: 12px; border: 1px solid var(--line); word-break: break-all; background: rgba(127,120,100,.08); }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 52px; border-radius: 12px; border: 0; font: inherit; font-weight: 700; font-size: 15px; cursor: pointer; text-decoration: none; margin-top: 10px; transition: background-color .2s, color .2s, transform .15s; }
+  .btn:active { transform: scale(.97); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .primary { background: var(--accent); color: var(--ink); }
+  .primary:hover { background: var(--text); color: var(--bg); }
+  .secondary { background: transparent; color: var(--text); border: 1.5px solid var(--line); }
+  .secondary:hover { border-color: var(--text); }
+  .warn { margin-top: 16px; font-size: 13px; line-height: 1.5; color: var(--warn); background: rgba(242,193,78,.08); border: 1px solid rgba(242,193,78,.3); padding: 12px 14px; border-radius: 12px; }
   .foot { margin-top: 14px; text-align: center; font-size: 12.5px; color: var(--muted); }
   .foot a { color: var(--muted); }
   .bad { text-align: center; padding: 20px 0; }
-  .toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 30px); opacity: 0; background: var(--card); border: 1px solid var(--line); padding: 10px 16px; border-radius: 12px; font-weight: 700; transition: .35s; }
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 30px); opacity: 0; background: var(--card); border: 1px solid var(--line); padding: 10px 16px; border-radius: 10px; font-weight: 700; transition: .3s; }
   .toast.on { transform: translate(-50%, 0); opacity: 1; }
 </style>
 </head>

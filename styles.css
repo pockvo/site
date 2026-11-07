@@ -754,3 +754,7 @@ html:not(.js) .shield-path, html:not(.js) .shield-check { stroke-dashoffset: 0; 
   .chart-area, .app-list li { opacity: 1; transform: none; }
   .num { color: var(--ink); }
 }
+
+/* the .deb link under the Linux button */
+.dl-alt { display: block; margin-top: 6px; color: var(--accent-text); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.dl-alt:hover { color: var(--ink); }

@@ -185,7 +185,9 @@
   const os = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? 'ios' : /Android/i.test(ua) ? 'android' : /Windows/i.test(ua) ? 'windows' : /Linux|X11/i.test(ua) ? 'linux' : 'other';
   const yourCard = $(`.dl-card[data-os="${os}"]`);
   if (yourCard) yourCard.classList.add('yours');
-  const LABEL = { windows: 'Скачать для Windows', android: 'Скачать для Android' };
+  const LABEL = { windows: 'Скачать для Windows', android: 'Скачать для Android', linux: 'Скачать для Linux' };
+  const BTN = { windows: 'Скачать для Windows', android: 'Скачать APK', linux: 'Скачать AppImage' };
+  const NAME = { windows: 'Windows', android: 'Android', linux: 'Linux' };
   const heroBtn = $('#heroDownload');
   const heroText = $('#heroDownloadText');
   const mb = (b) => fmt(b / 1048576, b < 104857600 ? 1 : 0) + ' МБ';
@@ -197,7 +199,7 @@
       if (!m || !m.version) return;
       $('#versionLine').textContent = `Версия ${m.version}. Бесплатно. Обновления приходят прямо в приложение.`;
       const sums = [];
-      for (const key of ['windows', 'android']) {
+      for (const key of ['windows', 'android', 'linux']) {
         const a = m[key];
         const btn = $(`[data-dl="${key}"]`);
         if (!a || !a.url || !btn) continue;
@@ -205,10 +207,19 @@
         btn.setAttribute('download', '');
         btn.removeAttribute('aria-disabled');
         btn.classList.remove('is-off');
-        btn.textContent = key === 'windows' ? 'Скачать для Windows' : 'Скачать APK';
+        btn.textContent = BTN[key];
         const meta = $(`[data-meta="${key}"]`);
         if (meta && a.size) meta.textContent = `${meta.textContent} · ${mb(a.size)}`;
-        if (a.sha256) sums.push(`<div class="sum"><b>${key === 'windows' ? 'Windows' : 'Android'} · ${a.url.split('/').pop()}</b><code>${a.sha256}</code></div>`);
+        if (a.sha256) sums.push(`<div class="sum"><b>${NAME[key]} · ${a.url.split('/').pop()}</b><code>${a.sha256}</code></div>`);
+        // the .deb sits next to the AppImage (Pockvo-<version>-amd64.deb)
+        if (key === 'linux') {
+          const deb = $('[data-dl-deb]');
+          if (deb) {
+            deb.href = a.url.replace(/[^/]+$/, `Pockvo-${m.version}-amd64.deb`);
+            deb.setAttribute('download', '');
+            deb.hidden = false;
+          }
+        }
         if (key === os) {
           heroBtn.href = a.url;
           heroBtn.setAttribute('download', '');

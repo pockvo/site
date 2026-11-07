@@ -1,22 +1,26 @@
 {
-  "version": "1.25.0",
-  "date": "2026-11-06T19:11:00.602Z",
+  "version": "1.26.0",
+  "date": "2026-11-07T13:43:04.635Z",
   "notes": [
-    "Обновления теперь приходят с сайта pokvo.space",
-    "Платёжные ссылки открываются на сайте Pockvo",
-    "Установщик для Windows стал меньше",
-    "Проверка обновлений стала строже: приложение ставит только подписанные версии и не откатывается на старые"
+    "Новый дизайн: бумага, чёрный и оранжевый, как на сайте Pockvo",
+    "Новые шрифты и новая иконка приложения",
+    "Светлая и тёмная темы стали спокойнее и читаются лучше"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.25.0-setup.exe",
-    "sha256": "6610550c0b31e5a8ae8d535d70709b2f3344187e10d9f034ae6a678a68e4b79f",
-    "size": 103455227
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.0-setup.exe",
+    "sha256": "2759525c8fb7421136e1f000671bae64754f528506298ce9f84d5deca118647c",
+    "size": 102912670
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.25.0.apk",
-    "sha256": "e42cfb651f31798ce1e008535f91252cc9ef40056a909cac4af2c6d8c74a0186",
-    "size": 11777912
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.0.apk",
+    "sha256": "ff70fbdeaec353b2b1585f381a06f5eb3078c607e0a436d7803407f0d6f9355c",
+    "size": 11223715
   },
-  "sig": "55db0e46db7a361c52ed2019047c510c8cc49d100bd8ac33754ebbccd764d974e93437dc05a0c065a2825f6c09f1e32435ff35f7bd3e1dd58f46b84141afac04",
-  "sig2": "f881e8b684529f00fc003322aa82a12b270c78cb226c0fe4e13d7349770d74cc2b5042bf4a775809bebbf8ff0f08bc8a3c823cdd98b78c1c9c4594a4cc740303"
+  "linux": {
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.0-x86_64.AppImage",
+    "sha256": "757c4f2437f515b033afcf8b9321c74297f74536ec877bda79e92e43986007b1",
+    "size": 104226370
+  },
+  "sig": "fd7ec73b6acf1b2883d5616c167cf4e5139a12887be7d4b15596f6e74d095ce519ac64596b563b6590a25f188495f35942e56986a020739e1eee3b9b731e7507",
+  "sig2": "7424987944b191402e82b57a95900aba78d12d14b9cfb750803d86e3e0812986db1979ae8b38260379b1795ec705c0e64d1964b2ce37eab001ce14e503c1c302"
 }
