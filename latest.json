@@ -1,25 +1,24 @@
 {
-  "version": "1.26.3",
-  "date": "2026-11-07T17:41:10.484Z",
+  "version": "1.26.4",
+  "date": "2026-11-07T20:14:21.164Z",
   "notes": [
-    "Защита от съёмки экрана: PIN-код, секретную фразу и отправку больше нельзя снять на видео, скриншот или зеркалирование",
-    "Главный экран с балансом снимать по-прежнему можно"
+    "Исправлен перевод Litecoin: слишком маленькую сумму приложение теперь не пропускает и сразу пишет минимум, а не непонятную ошибку сети"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.3-setup.exe",
-    "sha256": "ee09a5ac93632d5ce342b48dc238114a0776ba34f381d2a7b99650e485cc2c20",
-    "size": 102912918
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.4-setup.exe",
+    "sha256": "13f9d01c546170c2956c596bf9c164703ba5ea39e8d43eb5eb7e2369bc22fe7f",
+    "size": 102913753
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.3.apk",
-    "sha256": "f42558325ee178ef42a88e1659ca016fd44365efcdafd543a27188e82a27f059",
-    "size": 11224954
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.4.apk",
+    "sha256": "84f7f051d0a460d8352dee3810b387be8ccd9111f8af5031965d9b683f3df544",
+    "size": 11224267
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.3-x86_64.AppImage",
-    "sha256": "8e58587d1acc6e9840f8ed6aa900a58a0d85928c4f0b5c9b1ba4e0aba0adaf43",
-    "size": 104230565
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.4-x86_64.AppImage",
+    "sha256": "c080333df6c808379c2260f996f8417bd464bfd2edef31ac37dc749653bb832a",
+    "size": 104230039
   },
-  "sig": "b99383e3be65950983ba5a52aab65e110f6e9fc5676d7256adb95abb5a19b4935bbcc963498472eba7815d79355a3d64072be52f594bc89663f5230c65742107",
-  "sig2": "bbd090c8ceeec3dad6cae0d8a4274120ffd27742d0c89f1ffe6b1635fa95943b948432a6fe81fcc310695f5b774f615d30cd4b2a3976306fcd8835ecc68b3e0f"
+  "sig": "1a8f9ac40d6a5feef7ee25c7e43874f50861fc17ebdbb88c6b12321fdec7a5b2e68b78d813c6e5ac9a78491ba12b95dec202b8484d6c84378f7a0f358ed96a0f",
+  "sig2": "28047aea733fe3b09fec9808d4f074046ae91488124d99a4f69c5dfd5a1744d88c1244448386d9bea7f15a185d16ef40f4000489520757c3579deb54139ec101"
 }
