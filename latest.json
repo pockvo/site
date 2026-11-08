@@ -1,26 +1,25 @@
 {
-  "version": "1.26.5",
-  "date": "2026-11-07T21:09:57.047Z",
+  "version": "1.26.6",
+  "date": "2026-11-08T15:44:21.714Z",
   "notes": [
-    "Графики цены и портфеля теперь можно смотреть за всё время, а не только за год",
-    "Обновление данных стало быстрее",
-    "Кнопка обновления приложения и индикатор обновления стали аккуратнее"
+    "Выбранная сеть в фильтре больше не чернеет, а подсвечивается оранжевым",
+    "Фильтр сетей не переключается случайно при прокрутке и обновлении"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.5-setup.exe",
-    "sha256": "3314642667ca47e43756d7809facdec30d6aa25166c1bc0cf6b9d28a7ad334c7",
-    "size": 102914189
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.6-setup.exe",
+    "sha256": "fbe5830d37d96e54268b516d506a4132e2de9a9fbc602439b31c8045f537236e",
+    "size": 102913127
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.5.apk",
-    "sha256": "1c89d549eb9732781f91be75fadb45b01e152b102cb1163e6a874d3034f3f4bd",
-    "size": 11224824
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.6.apk",
+    "sha256": "40c891437b3071deb945ed380cfb9822af6f855ac83d9c5466a6dba041e46a60",
+    "size": 11224974
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.5-x86_64.AppImage",
-    "sha256": "8720ab192a1db565f14b13f9ff4692c1cce47904444826e98cebe63775d4573d",
-    "size": 104230377
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.6-x86_64.AppImage",
+    "sha256": "6e9c0b01582d687ad30542efa1509b014d3fc4041d8eda89b558926165ddaeaf",
+    "size": 104230323
   },
-  "sig": "531948c8bc35149ab70c496ceab88f2422084295cf0a17d8d78280c5199b79da9f9d9a6cb3ec9a767cd95f914f71378266234c3be520a20826570852ee40d00d",
-  "sig2": "bdc197161f8b058317ad0036b9a2237f5d06f2ced00eca8fb47242e0d392140f122e984666af2d587e4f31bce794e27399c99d332fe736ef5f81020160f68c07"
+  "sig": "528dba0b0d6a1c28255d15e4642f935d3929876921260b1c54d589fc50dc88943e4801e034ec73c9911de8796fe7143f7f5551ae1dd3ced8d6a71f8c7e74d900",
+  "sig2": "b3270e28686a6eeac71b9b15b341c897600d824bd14cf25e6ae0cffc54f81a4b110a9f3ae387a897a8e299f1025f3149489e94c91c782a25859a16445d17e10a"
 }
