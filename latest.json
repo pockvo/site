@@ -1,25 +1,24 @@
 {
-  "version": "1.26.6",
-  "date": "2026-11-08T15:44:21.714Z",
+  "version": "1.26.7",
+  "date": "2026-11-08T16:00:25.540Z",
   "notes": [
-    "Выбранная сеть в фильтре больше не чернеет, а подсвечивается оранжевым",
-    "Фильтр сетей не переключается случайно при прокрутке и обновлении"
+    "График «Всё время» теперь показывает историю монеты с первых лет, а не только за 5 лет"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.6-setup.exe",
-    "sha256": "fbe5830d37d96e54268b516d506a4132e2de9a9fbc602439b31c8045f537236e",
-    "size": 102913127
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.7-setup.exe",
+    "sha256": "45c98257f1f64685e925331bc0b51096176fa89cc42eeecde52b654768f52b71",
+    "size": 102913176
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.6.apk",
-    "sha256": "40c891437b3071deb945ed380cfb9822af6f855ac83d9c5466a6dba041e46a60",
-    "size": 11224974
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.7.apk",
+    "sha256": "b7a3e93fe7fb956db990395c0f677da8c0cb4c2cc29be2ee4aef1c6308fe6421",
+    "size": 11225003
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.6-x86_64.AppImage",
-    "sha256": "6e9c0b01582d687ad30542efa1509b014d3fc4041d8eda89b558926165ddaeaf",
-    "size": 104230323
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.7-x86_64.AppImage",
+    "sha256": "c3f0e67afa8d03c0486554247a68ef45fd044de337d1f5c047b3715d7a00be28",
+    "size": 104230057
   },
-  "sig": "528dba0b0d6a1c28255d15e4642f935d3929876921260b1c54d589fc50dc88943e4801e034ec73c9911de8796fe7143f7f5551ae1dd3ced8d6a71f8c7e74d900",
-  "sig2": "b3270e28686a6eeac71b9b15b341c897600d824bd14cf25e6ae0cffc54f81a4b110a9f3ae387a897a8e299f1025f3149489e94c91c782a25859a16445d17e10a"
+  "sig": "1b288fe42c878556d97074f9f37fe6e4c190e5afdd002b803769cd6f6081e2d7050b892114e3848314a73027b6d618151287ec9881f9ef2a753102c48ba6cf0c",
+  "sig2": "eb42790f114dafea5ccf6a5f657bb37541d3bd90650c0c44114f1f9e3c9c404a91cab30111519480bd30f2acf937eeb63cce390af0d246e583a4d7141fddd601"
 }
