@@ -1,24 +1,26 @@
 {
-  "version": "1.26.7",
-  "date": "2026-11-08T16:00:25.540Z",
+  "version": "1.26.8",
+  "date": "2026-11-09T20:21:47.304Z",
   "notes": [
-    "График «Всё время» теперь показывает историю монеты с первых лет, а не только за 5 лет"
+    "Windows: обновление снова ставится само одной кнопкой «Обновить» (раньше антивирус мог прервать установку)",
+    "График Биткоина «Всё» теперь с 2010 года",
+    "Обновление свайпом вниз — не дольше нескольких секунд"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.7-setup.exe",
-    "sha256": "45c98257f1f64685e925331bc0b51096176fa89cc42eeecde52b654768f52b71",
-    "size": 102913176
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.8-setup.exe",
+    "sha256": "f0c44d27ea01b26b608fbe2e2ee0228734a491f942f4a21993f9114bb33454b5",
+    "size": 102908622
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.7.apk",
-    "sha256": "b7a3e93fe7fb956db990395c0f677da8c0cb4c2cc29be2ee4aef1c6308fe6421",
-    "size": 11225003
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.8.apk",
+    "sha256": "4f0cc69e67be137a498c6fca0adebfd86173d488f8f6b395491d6a8b3957ef6e",
+    "size": 11228470
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.7-x86_64.AppImage",
-    "sha256": "c3f0e67afa8d03c0486554247a68ef45fd044de337d1f5c047b3715d7a00be28",
-    "size": 104230057
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.8-x86_64.AppImage",
+    "sha256": "edb9f2494c190256678c8d98aa2e6cdf531c7a9750ac0487e30dea8e322d46fc",
+    "size": 104238397
   },
-  "sig": "1b288fe42c878556d97074f9f37fe6e4c190e5afdd002b803769cd6f6081e2d7050b892114e3848314a73027b6d618151287ec9881f9ef2a753102c48ba6cf0c",
-  "sig2": "eb42790f114dafea5ccf6a5f657bb37541d3bd90650c0c44114f1f9e3c9c404a91cab30111519480bd30f2acf937eeb63cce390af0d246e583a4d7141fddd601"
+  "sig": "c557d1fb9e1f8628d1d10ef71a7dcaf283a6e30925264c1f7d5e4fea2a3f0791a69909229ab6b71cae40fb376b3be12a31a6f78ea4c2dc8311c62619d7b6160a",
+  "sig2": "035b58167b08353750674782be5fb4d93d2f7a1e31abf04df6760de1402a23cc8aac7ce1655f9a01a18db70a93d3c838340dd1328d47365f4d0ac397f951d309"
 }
