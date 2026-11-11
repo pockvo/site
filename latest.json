@@ -1,24 +1,26 @@
 {
-  "version": "1.26.10",
-  "date": "2026-11-11T16:34:25.660Z",
+  "version": "1.26.11",
+  "date": "2026-11-11T16:57:26.256Z",
   "notes": [
-    "Токены в сети TRON (например, Klever из майнинга) теперь видны, даже если на адресе ещё ни разу не было TRX"
+    "Токены в сети TRON (например, Klever из майнинга) теперь видны, даже если на адресе ещё ни разу не было TRX",
+    "Поле поиска без лишней подсветки и рамок",
+    "Стук по задней крышке работает сразу после запуска, без захода в настройки; отклик вибрацией сильнее"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.10-setup.exe",
-    "sha256": "fd5654c7a5401b45f1d5995877c1ab903058706b280b6cb136c52e1e32c6a695",
-    "size": 102937407
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.11-setup.exe",
+    "sha256": "8a927321ded2a0ef2aec603fc45c922bb0db2d861d380588cdc3e3eb559af18a",
+    "size": 102936851
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.10.apk",
-    "sha256": "9accb915d15d51098f47ef678158a54007f7f814a23ee2e56df224d1cc84def0",
-    "size": 11266525
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.11.apk",
+    "sha256": "d6dbda13c87f71f4031a129e6af1011ab2d3c7c92b6fa412a60f8ea18b599ede",
+    "size": 11266623
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.10-x86_64.AppImage",
-    "sha256": "de11b599dd661da59867915ff59e8ad50a5b8868e3f853ae38c2093cef0ec0a4",
-    "size": 104267226
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.11-x86_64.AppImage",
+    "sha256": "8390ef6c209061e274fc20d24ad7c2ba57fe26b2b757648469b61d8d56bf9341",
+    "size": 104262935
   },
-  "sig": "84df8e8edb2f1d9e045fd0f4e50692c7dbc2d11e6d84738bb7c213c9697e2fb861af6f51bac1a112de771110f76f69a6dc5c944c8db6f7e678f039e509badb02",
-  "sig2": "2bf2f2aef90ba05499c92718fcfd48bf84f673280d974989fe8f9ab09422b50423c41ec1c6d541252726700e252151f8f2d9401f184ba324cff185531c561d01"
+  "sig": "4e45fc3ab483905c5530b47b57825e9b51ee8c2da82191c7024eb9fe33ee6c5c4f68868dde6860589000c44ebaddb2a53356def515d1d8b8615f9a393fa2b901",
+  "sig2": "dc7fd675d592fb9a57c8a1c9d035c3038eaa2e37fbecfb33a32e140c1b0c8a182bdd425ec5591fee59c7eec0a8435d2e067276921bb75d37e8a19a922286a503"
 }
