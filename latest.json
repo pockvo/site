@@ -1,25 +1,24 @@
 {
-  "version": "1.26.9",
-  "date": "2026-11-11T15:23:40.325Z",
+  "version": "1.26.10",
+  "date": "2026-11-11T16:34:25.660Z",
   "notes": [
-    "Все монеты, которые платит пул майнинга unMineable, теперь видны в кошельке: добавлены Klever (KLV), WEN, SLERF, Holo, FUN, Kyber, Augur, Worldcoin, Asteroid Shiba, POL в сети BSC",
-    "Новые сети: EthereumPoW (ETHW), Sonic (S), Fantom (FTM), OctaSpace (OCTA)"
+    "Токены в сети TRON (например, Klever из майнинга) теперь видны, даже если на адресе ещё ни разу не было TRX"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.9-setup.exe",
-    "sha256": "f9fe8425877e2897fbfad9000ada07241d2f35063bcde7d601c212bb4d216e50",
-    "size": 102937293
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.10-setup.exe",
+    "sha256": "fd5654c7a5401b45f1d5995877c1ab903058706b280b6cb136c52e1e32c6a695",
+    "size": 102937407
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.9.apk",
-    "sha256": "f5a9d838b93dcbe0ac90a9db896f63a2d985645136bad80d4b649149ad3fc0ec",
-    "size": 11266116
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.10.apk",
+    "sha256": "9accb915d15d51098f47ef678158a54007f7f814a23ee2e56df224d1cc84def0",
+    "size": 11266525
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.9-x86_64.AppImage",
-    "sha256": "e133d87a7281f0f4b2dc00e291d8342abb178ff11a2c49af680e090e738e8e1a",
-    "size": 104267362
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.10-x86_64.AppImage",
+    "sha256": "de11b599dd661da59867915ff59e8ad50a5b8868e3f853ae38c2093cef0ec0a4",
+    "size": 104267226
   },
-  "sig": "0021942420e05f3b5804ff4bcc81791f1631eac35b91f5a5c22cd674bbf302128d8d66083cc5c5d46e49d5d7af8143fadbf5ac268e0b52668a23ff1da4560b00",
-  "sig2": "832d036a6c650cc8ef7e5a6e27e3a3a2c3fa66f3c1c49a0ccde98c136111af2d4e0826e6779a0d43a02dd0ad91ef0f0636ca9e0bac0200172fac75ed3f33870d"
+  "sig": "84df8e8edb2f1d9e045fd0f4e50692c7dbc2d11e6d84738bb7c213c9697e2fb861af6f51bac1a112de771110f76f69a6dc5c944c8db6f7e678f039e509badb02",
+  "sig2": "2bf2f2aef90ba05499c92718fcfd48bf84f673280d974989fe8f9ab09422b50423c41ec1c6d541252726700e252151f8f2d9401f184ba324cff185531c561d01"
 }
