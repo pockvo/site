@@ -1,26 +1,25 @@
 {
-  "version": "1.26.11",
-  "date": "2026-11-11T16:57:26.256Z",
+  "version": "1.26.12",
+  "date": "2026-11-13T18:52:34.304Z",
   "notes": [
-    "Токены в сети TRON (например, Klever из майнинга) теперь видны, даже если на адресе ещё ни разу не было TRX",
-    "Поле поиска без лишней подсветки и рамок",
-    "Стук по задней крышке работает сразу после запуска, без захода в настройки; отклик вибрацией сильнее"
+    "Экспериментальные монеты (Настройки → Дополнительно, только на компьютере): Quantus (QTC), Xelis (XEL), Zephyr (ZEPH), Dynex (DNX)",
+    "Они работают через официальные программы этих монет, а ключи выводятся из ваших секретных слов: одна фраза восстанавливает и их"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.11-setup.exe",
-    "sha256": "8a927321ded2a0ef2aec603fc45c922bb0db2d861d380588cdc3e3eb559af18a",
-    "size": 102936851
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.12-setup.exe",
+    "sha256": "28b3cbd27424fa5a5cdda527ec9fd7bdafb22912e0f23e1a9fdd72b67be28d7a",
+    "size": 102973326
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.11.apk",
-    "sha256": "d6dbda13c87f71f4031a129e6af1011ab2d3c7c92b6fa412a60f8ea18b599ede",
-    "size": 11266623
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.12.apk",
+    "sha256": "f6944feedb4a97b0d8e99a64d7dadb99981a433ca321fb5b52e74bf6e850a6a2",
+    "size": 11311606
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.11-x86_64.AppImage",
-    "sha256": "8390ef6c209061e274fc20d24ad7c2ba57fe26b2b757648469b61d8d56bf9341",
-    "size": 104262935
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.12-x86_64.AppImage",
+    "sha256": "933735d4657b5325e83448394817359a10344c88013408742ac1e015f1d205da",
+    "size": 104300224
   },
-  "sig": "4e45fc3ab483905c5530b47b57825e9b51ee8c2da82191c7024eb9fe33ee6c5c4f68868dde6860589000c44ebaddb2a53356def515d1d8b8615f9a393fa2b901",
-  "sig2": "dc7fd675d592fb9a57c8a1c9d035c3038eaa2e37fbecfb33a32e140c1b0c8a182bdd425ec5591fee59c7eec0a8435d2e067276921bb75d37e8a19a922286a503"
+  "sig": "ef2a079ab2c1149450464845641a769b5a7daf8b83b43c529fa9073e9de2f3b9097e5a51816239d920516ecbf033bb68eae03059ee2a832a37129c7caa3bfb0b",
+  "sig2": "13ac8e4feea6b6548e267eba668ca854408b76276c926a7fab425bd8fac2cb93d392a2d88292869347670e64333bf32a66ad73937dc4739ad3cb23a2487a9d0f"
 }
