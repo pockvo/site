@@ -1,26 +1,26 @@
 {
-  "version": "1.26.13",
-  "date": "2026-11-13T20:11:07.451Z",
+  "version": "1.26.14",
+  "date": "2026-11-14T09:35:22.274Z",
   "notes": [
-    "Quantus (QTC), Xelis (XEL), Zephyr (ZEPH) и Dynex (DNX) — теперь обычные монеты в списке (на компьютере), без переключателя",
-    "Программа монеты загружается, когда вы впервые открываете эту монету, — остальным она не мешает",
-    "Исправлено: если программа монеты не запускается, Pockvo больше не зависает"
+    "Quantus (QTC), Xelis (XEL), Zephyr (ZEPH) и Dynex (DNX) теперь работают и на телефоне: баланс, получение и отправка, как у других монет",
+    "Адреса этих монет одинаковые на телефоне и на компьютере — их даёт одна и та же секретная фраза",
+    "Приложение для Android стало больше: в него встроены официальные программы этих четырёх монет"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.13-setup.exe",
-    "sha256": "526fe9207b6c05116a7ff9c465aaed7bd3e365758facb7bcafe5ffb895ccf358",
-    "size": 102974114
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.14-setup.exe",
+    "sha256": "bae259fe15481e19e42bd95670bd97561ffaa15ffb5a1b8ef44c5a3932d20dc0",
+    "size": 102977030
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.13.apk",
-    "sha256": "3e950c2351900aa05dd60c1f55d31735c856ae0c6b915e62d8012c8be1c6cb71",
-    "size": 11311673
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.14.apk",
+    "sha256": "2e0ce424f60f351a883f5e06bdb36965f60867a0d2e6d2d3131f2365f53e139c",
+    "size": 66651601
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.13-x86_64.AppImage",
-    "sha256": "31bfac21ff41735876b2fd24c3e29688e65beeb8697dc7c66365f7469c4ce770",
-    "size": 104299823
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.14-x86_64.AppImage",
+    "sha256": "0dbf813d616f1f96e7147b2f0f1e96aff15974325d91e0d87e9de0562d4e5a40",
+    "size": 104304296
   },
-  "sig": "8bb9f2713500a899dfcfa4bf2ff8071ee7eff68bdfb515dd8f34ca9db3586a9ecc1322bea4f78753d9ee781354c6a9217f478cef64d54313ea4f919f7ec3f50c",
-  "sig2": "7a0683a8e1b9828fbe0488cf6a634a70158ad98ec0d27740c6d0d208350a1227203199eb5d1372814c446a4b0bfea401869ec31b4ae6fb35ebc91e0026227e06"
+  "sig": "045b2678ff9a51037c4a76303a52f78bc023f49c389d2b190fecbd0b79bc37826351dbdbdbf3711c4d8eaef83250cf53e3af636f0023af185eb144e6d30c6d0a",
+  "sig2": "8a6660f201253e4fe47a135040850bf1cd1b9fe5ac9c41d2f6a30601afab7beb187418087b6d10f798e7499da3d023eb157e013ccee69834a7f710c4e98e2f02"
 }
