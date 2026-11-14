@@ -1,25 +1,25 @@
 {
-  "version": "1.26.16",
-  "date": "2026-11-14T13:00:04.082Z",
+  "version": "1.26.17",
+  "date": "2026-11-14T18:52:43.013Z",
   "notes": [
-    "Графики Quantus, Xelis, Zephyr, Dynex и других небольших монет загружаются всегда: если один источник цен занят, данные берутся с бирж MEXC, BigONE или Gate; без интернета — последний сохранённый график",
-    "Новая версия находится сразу после выхода: приложение больше не берёт устаревшую копию списка версий"
+    "Покупка за рубли: выбор способа оплаты — карта любого банка и СБП, Сбербанк, Т-Банк, Альфа-Банк, ВТБ и другие; обменников стало около 160 вместо двух",
+    "На главном экране — быстрый переключатель валюты: $, ₽, €"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.16-setup.exe",
-    "sha256": "b2133bb0c7d89b9a3255684e411dc0d5207627788820af355e59ae856d42f21b",
-    "size": 102979780
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.17-setup.exe",
+    "sha256": "ac45561d2dc0608917ee0dc370489e86100c9902760d45565364d5932c6b71af",
+    "size": 102985266
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.16.apk",
-    "sha256": "208004b433bf29b851315273c459cd106a77597a083f864e54741b2fad84babb",
-    "size": 66654076
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.17.apk",
+    "sha256": "1f712c5ff77e857458db73a90778cefc3dc0433e7a9b5620a131036bafc975ae",
+    "size": 66669223
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.16-x86_64.AppImage",
-    "sha256": "9e527dd062e09a7972d1b895bec5896f9bb1bbf8145f33e768bafc5b4ef466e3",
-    "size": 104304276
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.17-x86_64.AppImage",
+    "sha256": "d7167f9baf51d422f0fe50de4ff47545e862fce82f3382cf73fa9af46b181e30",
+    "size": 104308298
   },
-  "sig": "4288ceabf342ac910b6c0d6badf9bd4ee1d286bc347290a444c6e7f0330a3f0cf923373a1da3dfe05ceb85437974fa2118614b3d1dd4394680e20b29f8353f0a",
-  "sig2": "0a11e34fed016adc7d7f01f2e208cdfa5fcfee722d14edbf12d753f55921ad31b19c388fd738066b89393dfdda2218f9bd3d7fe8411cb8fe3fe557e2545aa80c"
+  "sig": "bbc5b81fe2e2a27c9e896abec22422ed70889b6ae6eeb86c8c7bcc30aa430e92b0c17a86fa622e7ea6c343c1290bcb1b3d8cd3eed0e23cc7db589c886ca7620a",
+  "sig2": "e46aa80780bb6fbc28616b3c68f5c0ccad2a83b8754c483d4bb00ae8e4bd678224a36f29cb154ac8faebee5ae7d99b0e35c045a1ece722392b45f6e3e8ca6f0b"
 }
