@@ -1,26 +1,25 @@
 {
-  "version": "1.26.15",
-  "date": "2026-11-14T11:24:14.045Z",
+  "version": "1.26.16",
+  "date": "2026-11-14T13:00:04.082Z",
   "notes": [
-    "Безопасность Quantus, Xelis, Zephyr и Dynex: программы этих монет проверяются по контрольной сумме перед каждым запуском — изменённый файл не запустится",
-    "Комиссия перевода Xelis и Zephyr не может оказаться больше, чем вдвое выше показанной при подтверждении",
-    "Обмен Sonic (S) через Exolix"
+    "Графики Quantus, Xelis, Zephyr, Dynex и других небольших монет загружаются всегда: если один источник цен занят, данные берутся с бирж MEXC, BigONE или Gate; без интернета — последний сохранённый график",
+    "Новая версия находится сразу после выхода: приложение больше не берёт устаревшую копию списка версий"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.15-setup.exe",
-    "sha256": "52092d325e57eb8b2347eeb20836aafbc99b71a1a2843a98a7fec04d3ebf9337",
-    "size": 102979643
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.16-setup.exe",
+    "sha256": "b2133bb0c7d89b9a3255684e411dc0d5207627788820af355e59ae856d42f21b",
+    "size": 102979780
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.15.apk",
-    "sha256": "76e8d15f52c33437fec33757f149b3f9937549a37b01838cbe65044b41aa8320",
-    "size": 66653641
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.16.apk",
+    "sha256": "208004b433bf29b851315273c459cd106a77597a083f864e54741b2fad84babb",
+    "size": 66654076
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.15-x86_64.AppImage",
-    "sha256": "3ee72335de8a5d0296276384edfe33b5fe971af24c4598cf2ce7e44e2c0fe163",
-    "size": 104308008
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.16-x86_64.AppImage",
+    "sha256": "9e527dd062e09a7972d1b895bec5896f9bb1bbf8145f33e768bafc5b4ef466e3",
+    "size": 104304276
   },
-  "sig": "9f154c12ba238c6151c232e53a6f86768147d0860e4cc08ef0c4c6937db2924b6d11bc4fa6c55c223b23c76c75015f2567996cbb1afed6ebb670aa71e043da07",
-  "sig2": "f512fabb47307f0f124f89e67f0106620c87c3c096e81bf8a0dd1eaa09be67d40e2b102dd4ca2158180e8a56d16ae96d22f0e32c72d5daf24fc2431aa173dc09"
+  "sig": "4288ceabf342ac910b6c0d6badf9bd4ee1d286bc347290a444c6e7f0330a3f0cf923373a1da3dfe05ceb85437974fa2118614b3d1dd4394680e20b29f8353f0a",
+  "sig2": "0a11e34fed016adc7d7f01f2e208cdfa5fcfee722d14edbf12d753f55921ad31b19c388fd738066b89393dfdda2218f9bd3d7fe8411cb8fe3fe557e2545aa80c"
 }
