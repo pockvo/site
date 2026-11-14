@@ -1,25 +1,25 @@
 {
-  "version": "1.26.17",
-  "date": "2026-11-14T18:52:43.013Z",
+  "version": "1.26.18",
+  "date": "2026-11-14T19:47:39.935Z",
   "notes": [
-    "Покупка за рубли: выбор способа оплаты — карта любого банка и СБП, Сбербанк, Т-Банк, Альфа-Банк, ВТБ и другие; обменников стало около 160 вместо двух",
-    "На главном экране — быстрый переключатель валюты: $, ₽, €"
+    "История переводов Quantus, Xelis, Zephyr и Dynex: входящие (в том числе выплаты с майнинга) и исходящие",
+    "Уведомление о любом поступлении на любую монету: на телефоне теперь и для Monero и этих четырёх монет, на компьютере — даже когда Pockvo свёрнут"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.17-setup.exe",
-    "sha256": "ac45561d2dc0608917ee0dc370489e86100c9902760d45565364d5932c6b71af",
-    "size": 102985266
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.18-setup.exe",
+    "sha256": "ae6b91de18fefcfe6bbe90d8ad5a111931b6bdf71fd1205ea933d4de92c9620d",
+    "size": 102985620
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.17.apk",
-    "sha256": "1f712c5ff77e857458db73a90778cefc3dc0433e7a9b5620a131036bafc975ae",
-    "size": 66669223
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.18.apk",
+    "sha256": "1ee2002de814e45ebbf0889b60b48941fc8140017f5af2b53e45fe212df47c40",
+    "size": 66670530
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.17-x86_64.AppImage",
-    "sha256": "d7167f9baf51d422f0fe50de4ff47545e862fce82f3382cf73fa9af46b181e30",
-    "size": 104308298
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.18-x86_64.AppImage",
+    "sha256": "3d71aec8cd6d1603b94c78c6ef32feeac275e72859b7805b3eff3f008669e505",
+    "size": 104311840
   },
-  "sig": "bbc5b81fe2e2a27c9e896abec22422ed70889b6ae6eeb86c8c7bcc30aa430e92b0c17a86fa622e7ea6c343c1290bcb1b3d8cd3eed0e23cc7db589c886ca7620a",
-  "sig2": "e46aa80780bb6fbc28616b3c68f5c0ccad2a83b8754c483d4bb00ae8e4bd678224a36f29cb154ac8faebee5ae7d99b0e35c045a1ece722392b45f6e3e8ca6f0b"
+  "sig": "00637edc2afed755504bfa59cc10233d75d5da24d84a5ba268a7d6654bd7da132b1335f782ceb926dcadf12be2e498d890aa071790147c8ffdb894b725907407",
+  "sig2": "2acf48681827d5de233e7a48334fa37d32eae74c51c9ae9546759590f30235c701e3c75877a899d1e578595ffaa90b93146f3c9197f73da2bb79a80b76cd780a"
 }
