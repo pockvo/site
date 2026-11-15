@@ -1,25 +1,24 @@
 {
-  "version": "1.26.19",
-  "date": "2026-11-15T09:17:18.836Z",
+  "version": "1.26.20",
+  "date": "2026-11-15T11:42:30.416Z",
   "notes": [
-    "Quantus, Xelis, Zephyr и Dynex сами показывают баланс на любом устройстве — открывать монету не нужно",
-    "На телефоне переключатель валюты стал одной компактной кнопкой: $ → ₽ → €"
+    "Android: Xelis и Quantus снова показывают баланс и историю и могут отправлять — их программы теперь подключаются к сети через защищённое соединение самого Android"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.19-setup.exe",
-    "sha256": "f7e81d54e9c3fa5fe5eaea531e2ae9f8ba9390a422bccddf8643fdaf04b4f58a",
-    "size": 102986537
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.20-setup.exe",
+    "sha256": "bb0cd3e409e26a905b9082337cd81cdc43ac255d2db47d496a832ea384a1ab4d",
+    "size": 102987517
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.19.apk",
-    "sha256": "843712a86a7c7ac579a3a08924fa57c093527a60abdfbc5eae05ea5a0bb4a599",
-    "size": 66670816
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.20.apk",
+    "sha256": "52e00d68254cf8952ffa9d27c974b7f602067bd458c4f1df3f6c3f425d3f837c",
+    "size": 66672331
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.19-x86_64.AppImage",
-    "sha256": "4961f476c7503eb6d4ac5c4ab281a84c1a5a37b350453801cce2232df1e573cd",
-    "size": 104316450
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.20-x86_64.AppImage",
+    "sha256": "d8e6c11a349e867c6e37fdcc02b48d55e37040ae8a5efbe26342d2da3e42e08e",
+    "size": 104317012
   },
-  "sig": "aea0ba0a95a29c1a9b8356681ea3d50651b8467f1d5bfbefbb50001c2fa6d210496b13559423ef52fb0ff709f829d98b6fdeb0ce48313368040c6ed82cf3c90d",
-  "sig2": "b0fb306890c3f9062829c877e50bb117011e94b3cbceee6c67bde056c00c53a4fa38b0e59b3140b3e40359495558de6db599cd1829b3cff7dc92af8e3a04850f"
+  "sig": "c2879544f0d4d29e5c848b91ff92f02ddc573b5352243d0c870469b7e3dc5ba3d73e9303030c7a0efc46d1e1e126039b04601b45b553b093ea6459e37b9ad702",
+  "sig2": "908b08b242e7bf252f0042bb9fead826ebb3ae4809bca1a7e241cd490dc597d5d7ec117ec229dae49693e17b043daaae40288c900bec32c516630d24beb45600"
 }
