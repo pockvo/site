@@ -1,25 +1,25 @@
 {
-  "version": "1.26.18",
-  "date": "2026-11-14T19:47:39.935Z",
+  "version": "1.26.19",
+  "date": "2026-11-15T09:17:18.836Z",
   "notes": [
-    "История переводов Quantus, Xelis, Zephyr и Dynex: входящие (в том числе выплаты с майнинга) и исходящие",
-    "Уведомление о любом поступлении на любую монету: на телефоне теперь и для Monero и этих четырёх монет, на компьютере — даже когда Pockvo свёрнут"
+    "Quantus, Xelis, Zephyr и Dynex сами показывают баланс на любом устройстве — открывать монету не нужно",
+    "На телефоне переключатель валюты стал одной компактной кнопкой: $ → ₽ → €"
   ],
   "windows": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.18-setup.exe",
-    "sha256": "ae6b91de18fefcfe6bbe90d8ad5a111931b6bdf71fd1205ea933d4de92c9620d",
-    "size": 102985620
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.19-setup.exe",
+    "sha256": "f7e81d54e9c3fa5fe5eaea531e2ae9f8ba9390a422bccddf8643fdaf04b4f58a",
+    "size": 102986537
   },
   "android": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.18.apk",
-    "sha256": "1ee2002de814e45ebbf0889b60b48941fc8140017f5af2b53e45fe212df47c40",
-    "size": 66670530
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.19.apk",
+    "sha256": "843712a86a7c7ac579a3a08924fa57c093527a60abdfbc5eae05ea5a0bb4a599",
+    "size": 66670816
   },
   "linux": {
-    "url": "https://pokvo.space/downloads/Pockvo-1.26.18-x86_64.AppImage",
-    "sha256": "3d71aec8cd6d1603b94c78c6ef32feeac275e72859b7805b3eff3f008669e505",
-    "size": 104311840
+    "url": "https://pokvo.space/downloads/Pockvo-1.26.19-x86_64.AppImage",
+    "sha256": "4961f476c7503eb6d4ac5c4ab281a84c1a5a37b350453801cce2232df1e573cd",
+    "size": 104316450
   },
-  "sig": "00637edc2afed755504bfa59cc10233d75d5da24d84a5ba268a7d6654bd7da132b1335f782ceb926dcadf12be2e498d890aa071790147c8ffdb894b725907407",
-  "sig2": "2acf48681827d5de233e7a48334fa37d32eae74c51c9ae9546759590f30235c701e3c75877a899d1e578595ffaa90b93146f3c9197f73da2bb79a80b76cd780a"
+  "sig": "aea0ba0a95a29c1a9b8356681ea3d50651b8467f1d5bfbefbb50001c2fa6d210496b13559423ef52fb0ff709f829d98b6fdeb0ce48313368040c6ed82cf3c90d",
+  "sig2": "b0fb306890c3f9062829c877e50bb117011e94b3cbceee6c67bde056c00c53a4fa38b0e59b3140b3e40359495558de6db599cd1829b3cff7dc92af8e3a04850f"
 }
